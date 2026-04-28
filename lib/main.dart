@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:myapp2/button.dart';
+import 'package:myapp2/gallery.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,7 +9,6 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,8 +16,12 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-
-      home: const MyWidget(),
+      initialRoute: '/button',
+      routes: {
+        '/button': (context) => const MyWidget(),
+        '/gallery': (context) => const GalleryWidget(),
+      },
+      // home: const GalleryWidget(),
     );
   }
 }
