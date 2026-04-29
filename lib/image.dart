@@ -28,7 +28,7 @@ class _imageRouteState extends State<imageRoute> {
               height: 150,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/images/1.jpg'),
+                  image: AssetImage('assets/1.jpeg'),
                   fit: BoxFit.cover,
                 ),
               ),
