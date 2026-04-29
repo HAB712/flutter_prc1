@@ -17,6 +17,12 @@ class _MyWidgetState extends State<MyWidget> {
       body: Center(
         child: Column(
           children: [
+
+            TextButton(onPressed: (){
+              Navigator.pushNamed(context, '/image' );
+            }, child: Text('Image Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: TextButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
+
+
             ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.deepOrangeAccent,
@@ -32,7 +38,9 @@ class _MyWidgetState extends State<MyWidget> {
           Navigator.pushNamed(context, '/gallery');
         },child: Text('Gallery Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
           ],
-        )
+        ),
+
+
        
       )
 
