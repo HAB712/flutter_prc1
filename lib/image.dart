@@ -21,7 +21,14 @@ class _imageRouteState extends State<imageRoute> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-
+              width: 150,
+              height: 150,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: NetworkImage('https://images.unsplash.com/photo-1682687224417-9c8e5b1a0c8d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60'),
+                  fit: BoxFit.cover,
+                ),
+              ),
             ),
             Container(
               width: 150,

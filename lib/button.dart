@@ -32,6 +32,10 @@ class _MyWidgetState extends State<MyWidget> {
           },
           child: Text('Press Me', style: TextStyle(color: Colors.black38, fontSize: 20),),
         ),
+        SizedBox(height: 10,),
+        ElevatedButton(onPressed: () { 
+          Navigator.pushNamed(context, '/loop');
+        },child: Text('Loop Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
 
         SizedBox(height: 10,),
         ElevatedButton(onPressed: () { 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp2/button.dart';
 import 'package:myapp2/gallery.dart';
 import 'package:myapp2/image.dart';
+import 'package:myapp2/loop.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
         '/button': (context) => const MyWidget(),
         '/gallery': (context) => const GalleryWidget(),
         '/image' : (context) => const imageRoute(),
+        '/loop' : (context) => const LoopWidget(),
       },
       // home: const GalleryWidget(),
     );
