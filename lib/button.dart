@@ -18,12 +18,12 @@ class _MyWidgetState extends State<MyWidget> {
         child: Column(
           children: [
 
-            TextButton(onPressed: (){
+        TextButton(onPressed: (){
               Navigator.pushNamed(context, '/image' );
-            }, child: Text('Image Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: TextButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
+          }, child: Text('Image Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: TextButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
 
 
-            ElevatedButton(
+        ElevatedButton(
           style: ElevatedButton.styleFrom(
             backgroundColor: Colors.deepOrangeAccent,
           ),
@@ -32,15 +32,18 @@ class _MyWidgetState extends State<MyWidget> {
           },
           child: Text('Press Me', style: TextStyle(color: Colors.black38, fontSize: 20),),
         ),
+
+
         SizedBox(height: 10,),
         ElevatedButton(onPressed: () { 
           Navigator.pushNamed(context, '/loop');
-        },child: Text('Loop Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
+        },child: Text('Loop Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 238, 26, 90)),),
+
 
         SizedBox(height: 10,),
         ElevatedButton(onPressed: () { 
           Navigator.pushNamed(context, '/gallery');
-        },child: Text('Gallery Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
+        },child: Text('Gallery Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 255, 178, 77)),),
           ],
         ),
 
