@@ -30,6 +30,7 @@ class _imageRouteState extends State<imageRoute> {
                 ),
               ),
             ),
+            Image.asset('assets/1.jpeg', width: 150, height: 150, fit: BoxFit.cover,),
             Container(
               width: 150,
               height: 150,
