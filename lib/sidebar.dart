@@ -12,9 +12,14 @@ class _SidebarState extends State<Sidebar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('SideBar'),),
-      body: UserAccountsDrawerHeader(accountName: Text( 'Habiba'), accountEmail: Text('habiba@gmail.com'),
-      
+      drawer: Drawer(
+        backgroundColor: Colors.white10,
+        child: UserAccountsDrawerHeader(accountName: Text('data'), accountEmail: Text('@gmail.com')),
       ),
+      body: Center(
+        child: Text('This is the sidebar page'),
+      ),
+
     );
   }
 }

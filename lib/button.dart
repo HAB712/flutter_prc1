@@ -18,6 +18,17 @@ class _MyWidgetState extends State<MyWidget> {
         child: Column(
           children: [
 
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/count');
+              },
+              child: Text('Count Page'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepPurpleAccent,
+              ),
+            ),
+            
+
         TextButton(onPressed: (){
               Navigator.pushNamed(context, '/image' );
           }, child: Text('Image Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: TextButton.styleFrom(backgroundColor: Colors.deepPurpleAccent),),
@@ -45,10 +56,11 @@ class _MyWidgetState extends State<MyWidget> {
           Navigator.pushNamed(context, '/gallery');
         },child: Text('Gallery Page', style: TextStyle(color: Colors.black38, fontSize: 20),), style: ElevatedButton.styleFrom(backgroundColor: const Color.fromARGB(255, 255, 178, 77)),),
           ],
+
         ),
 
-
-       
+        
+   
       )
 
     );
