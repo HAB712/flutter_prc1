@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:myapp2/button.dart';
 import 'package:myapp2/count.dart';
 import 'package:myapp2/gallery.dart';
+import 'package:myapp2/grid.dart';
 import 'package:myapp2/image.dart';
 import 'package:myapp2/loop.dart';
 
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
         '/image' : (context) => const imageRoute(),
         '/loop' : (context) => const LoopWidget(),
         '/count': (context) => const Count(),
+        '/grid': (context) => const GridViewss(),
       },
       // home: const GalleryWidget(),
     );

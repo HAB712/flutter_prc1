@@ -18,11 +18,22 @@ class _MyWidgetState extends State<MyWidget> {
         child: Column(
           children: [
 
+
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/grid');
+              },
+              child: Text('Grid Page', style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 20),),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepPurpleAccent,
+              ),
+            ),
+
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/count');
               },
-              child: Text('Count Page'),
+              child: Text('Count Page', style: TextStyle(color: const Color.fromARGB(255, 255, 255, 255), fontSize: 20),),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurpleAccent,
               ),
